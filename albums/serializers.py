@@ -2,10 +2,6 @@ from rest_framework.serializers import ModelSerializer
 
 from .models import Album
 
-    # id = serializers.IntegerField(read_only=True)
-    # name = serializers.CharField(max_length=255)
-    # year = serializers.IntegerField()
-    # user_id = serializers.IntegerField(read_only=True)
 
 class AlbumSerializer(ModelSerializer):
     class Meta:

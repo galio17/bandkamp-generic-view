@@ -2,10 +2,6 @@ from rest_framework.serializers import ModelSerializer
 
 from .models import Song
 
-    # id = serializers.IntegerField(read_only=True)
-    # title = serializers.CharField(max_length=255)
-    # duration = serializers.CharField(max_length=255)
-    # album_id = serializers.IntegerField(read_only=True)
 
 class SongSerializer(ModelSerializer):
     class Meta:
