@@ -24,3 +24,6 @@ class UserSerializer(ModelSerializer):
                 'write_only': True
             }
         }
+
+    def create(self, validated_data: dict) -> User:
+        return User.objects.create_superuser(**validated_data)
